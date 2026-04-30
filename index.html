@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elite Concursos — Aprovação Garantida em Carreiras Policiais, Jurídicas e Administrativas</title>
+  <meta name="description" content="O método com base em provas reais que já aprovou +2.800 alunos. 9 disciplinas, 1.200+ questões comentadas, acesso vitalício. Garantia de 7 dias.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    /* ==================== RESET & BASE ==================== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:       #0F172A;
+      --blue:       #0369A1;
+      --blue-light: #0EA5E9;
+      --gold:       #F59E0B;
+      --gold-dark:  #D97706;
+      --green:      #059669;
+      --red:        #DC2626;
+      --bg:         #F8FAFC;
+      --card:       #FFFFFF;
+      --text:       #020617;
+      --muted:      #64748B;
+      --border:     #E2E8F0;
+      --shadow-sm:  0 1px 3px rgba(0,0,0,.10);
+      --shadow-md:  0 4px 16px rgba(0,0,0,.12);
+      --shadow-lg:  0 12px 40px rgba(0,0,0,.18);
+      --r:          12px;
+      --r-sm:       8px;
+      --r-lg:       20px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      font-size: 16px;
+    }
+
+    h1,h2,h3,h4,h5 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      line-height: 1.15;
+    }
+
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
+
+    /* ==================== LAYOUT ==================== */
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+    .section    { padding: 88px 0; }
+    .text-center { text-align: center; }
+
+    /* ==================== BADGES & TAGS ==================== */
+    .badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 5px 14px; border-radius: 100px;
+      font-size: 13px; font-weight: 600; font-family: 'Poppins', sans-serif;
+    }
+    .badge-gold  { background:#FEF3C7; color:#92400E; border:1px solid #FDE68A; }
+    .badge-green { background:#D1FAE5; color:#065F46; border:1px solid #A7F3D0; }
+
+    .section-label {
+      font-size: 12px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 2px; color: var(--blue); margin-bottom: 10px;
+      font-family: 'Poppins', sans-serif;
+    }
+    .section-title {
+      font-size: clamp(26px, 3.5vw, 42px);
+      color: var(--navy); margin-bottom: 16px;
+    }
+    .section-sub {
+      font-size: 17px; color: var(--muted);
+      margin-bottom: 48px; max-width: 620px;
+    }
+
+    /* ==================== BUTTONS ==================== */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      gap: 8px; padding: 16px 32px; border-radius: var(--r-sm);
+      font-family: 'Poppins', sans-serif; font-weight: 700;
+      font-size: 16px; cursor: pointer; border: none;
+      transition: all .22s; text-align: center;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #F59E0B, #FBBF24);
+      color: #0F172A;
+      box-shadow: 0 4px 22px rgba(245,158,11,.40);
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(245,158,11,.55); }
+    .btn-outline {
+      background: transparent; color: white;
+      border: 2px solid rgba(255,255,255,.5);
+    }
+    .btn-outline:hover { background: rgba(255,255,255,.1); border-color: white; }
+    .btn-green {
+      background: var(--green); color: white;
+      box-shadow: 0 4px 20px rgba(5,150,105,.35);
+    }
+    .btn-green:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(5,150,105,.5); }
+    .btn-lg  { padding: 20px 48px; font-size: 18px; }
+    .btn-full { width: 100%; }
+
+    /* ==================== URGENCY BAR ==================== */
+    .urgency-bar {
+      background: linear-gradient(90deg,#B91C1C,#EF4444,#B91C1C);
+      padding: 11px 0; text-align: center;
+    }
+    .urgency-bar p {
+      color: white; font-weight: 600; font-size: 14px;
+      display: flex; align-items: center; justify-content: center; gap: 10px; flex-wrap: wrap;
+    }
+    .countdown { display: inline-flex; gap: 4px; align-items: center; }
+    .cd-unit {
+      background: rgba(0,0,0,.35); padding: 2px 9px; border-radius: 4px;
+      font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 17px;
+    }
+
+    /* ==================== NAVBAR ==================== */
+    .navbar {
+      position: sticky; top: 0; z-index: 200;
+      background: var(--navy); padding: 14px 0;
+      box-shadow: 0 2px 12px rgba(0,0,0,.3);
+    }
+    .navbar .container { display:flex; align-items:center; justify-content:space-between; }
+    .navbar-brand { font-family:'Poppins',sans-serif; font-weight:800; font-size:22px; color:white; }
+    .navbar-brand span { color: var(--gold); }
+    .navbar-right { display:flex; align-items:center; gap:20px; }
+    .navbar-tag { color:#94A3B8; font-size:13px; }
+    .navbar-cta {
+      background: var(--gold); color: var(--navy);
+      padding: 10px 22px; border-radius: var(--r-sm);
+      font-weight: 700; font-family:'Poppins',sans-serif; font-size:14px;
+      transition: all .2s;
+    }
+    .navbar-cta:hover { background:#FBBF24; transform:scale(1.04); }
+
+    /* ==================== HERO ==================== */
+    .hero {
+      background: linear-gradient(145deg, #080F1E 0%, #0F1E3D 50%, #0D3B66 100%);
+      padding: 80px 0 60px; overflow: hidden; position: relative;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 70% 50%, rgba(3,105,161,.25) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero .container {
+      display: grid; grid-template-columns: 1fr 480px;
+      gap: 60px; align-items: center; position: relative;
+    }
+    .hero-eyebrow { margin-bottom: 18px; }
+    .hero-title {
+      font-size: clamp(30px, 4vw, 52px); color: white;
+      line-height: 1.1; margin-bottom: 18px;
+    }
+    .hero-title .gold { color: var(--gold); }
+    .hero-sub {
+      font-size: 18px; color: #94A3B8; margin-bottom: 36px; line-height: 1.7;
+    }
+    .hero-ctas { display:flex; gap:14px; flex-wrap:wrap; margin-bottom:40px; }
+    .hero-trust { display:flex; gap:20px; flex-wrap:wrap; }
+    .trust-item {
+      display:flex; align-items:center; gap:7px;
+      color:#94A3B8; font-size:13px;
+    }
+    .trust-item .ck { color: var(--gold); }
+
+    /* COURSE MOCKUP */
+    .course-mockup {
+      background: white; border-radius: var(--r-lg);
+      box-shadow: 0 30px 80px rgba(0,0,0,.5);
+      overflow: hidden;
+      transform: perspective(900px) rotateY(-6deg) rotateX(3deg);
+      transition: transform .4s;
+    }
+    .course-mockup:hover { transform: perspective(900px) rotateY(-2deg) rotateX(1deg); }
+    .mk-header {
+      background: var(--navy); padding: 11px 16px;
+      display:flex; align-items:center; gap:7px;
+    }
+    .mk-dot { width:10px; height:10px; border-radius:50%; }
+    .mk-dot:nth-child(1){background:#EF4444;}
+    .mk-dot:nth-child(2){background:#F59E0B;}
+    .mk-dot:nth-child(3){background:#22C55E;}
+    .mk-caption { color:#94A3B8; font-size:11px; margin-left:8px; }
+    .mk-body { display:grid; grid-template-columns:190px 1fr; height:340px; }
+    .mk-sidebar {
+      background:#F1F5F9; border-right:1px solid var(--border); padding:10px 0;
+    }
+    .mk-sidebar-title {
+      font-size:10px; font-weight:700; color:var(--muted);
+      text-transform:uppercase; letter-spacing:1px;
+      padding:0 12px; margin-bottom:6px; font-family:'Poppins',sans-serif;
+    }
+    .mk-item { padding:7px 12px; font-size:11px; display:flex; align-items:center; gap:6px; }
+    .mk-item.active { background:#DBEAFE; color:var(--blue); font-weight:700; border-left:3px solid var(--blue); }
+    .mk-item .ck { color:var(--green); }
+    .mk-item .lk { color:#CBD5E1; font-size:10px; }
+    .mk-content { padding:16px; overflow:hidden; }
+    .mk-video {
+      background: var(--navy); border-radius:var(--r-sm);
+      height:150px; display:flex; align-items:center; justify-content:center;
+      margin-bottom:12px; position:relative; overflow:hidden;
+    }
+    .mk-video::before {
+      content:''; position:absolute; inset:0;
+      background: linear-gradient(135deg,#0369A1 0%,#0F172A 100%); opacity:.75;
+    }
+    .mk-play {
+      width:44px; height:44px; background:rgba(255,255,255,.92); border-radius:50%;
+      display:flex; align-items:center; justify-content:center;
+      font-size:16px; position:relative; z-index:1; color:var(--navy);
+    }
+    .mk-lesson { font-size:12px; font-weight:700; color:var(--navy); margin-bottom:5px; font-family:'Poppins',sans-serif; }
+    .mk-prog-lbl { font-size:10px; color:var(--muted); margin-bottom:4px; }
+    .mk-prog-bar { height:5px; background:#E2E8F0; border-radius:10px; overflow:hidden; margin-bottom:10px; }
+    .mk-prog-fill { height:100%; width:35%; background:linear-gradient(90deg,var(--blue),var(--blue-light)); border-radius:10px; }
+    .mk-btns { display:flex; gap:5px; }
+    .mk-btn { flex:1; padding:5px 6px; border-radius:var(--r-sm); font-size:10px; font-weight:600; text-align:center; font-family:'Poppins',sans-serif; }
+    .mk-btn-blue { background:var(--blue); color:white; }
+    .mk-btn-gray { background:#F1F5F9; color:var(--muted); border:1px solid var(--border); }
+
+    /* ==================== PROOF STRIP ==================== */
+    .proof-strip { background:var(--navy); padding:28px 0; }
+    .proof-strip .container { display:flex; justify-content:space-around; flex-wrap:wrap; gap:20px; }
+    .proof-item { text-align:center; }
+    .proof-number { font-family:'Poppins',sans-serif; font-size:34px; font-weight:800; color:var(--gold); line-height:1; }
+    .proof-label { font-size:12px; color:#94A3B8; text-transform:uppercase; letter-spacing:1px; margin-top:4px; }
+
+    /* ==================== PAIN SECTION ==================== */
+    .pain-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(290px,1fr)); gap:18px;
+    }
+    .pain-card {
+      background:white; border:1px solid #FEE2E2; border-left:4px solid var(--red);
+      border-radius:var(--r); padding:22px; display:flex; gap:14px; align-items:flex-start;
+    }
+    .pain-icon { font-size:28px; flex-shrink:0; }
+    .pain-title { font-weight:700; color:var(--navy); margin-bottom:5px; font-family:'Poppins',sans-serif; font-size:15px; }
+    .pain-text { color:var(--muted); font-size:14px; line-height:1.6; }
+
+    /* ==================== SOLUTION SECTION ==================== */
+    .solution-section { background:var(--navy); }
+    .solution-section .section-label { color:var(--gold); }
+    .solution-section .section-title { color:white; }
+    .solution-section .section-sub { color:#94A3B8; }
+    .pillars { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; margin-top:48px; }
+    .pillar {
+      background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.1);
+      border-radius:var(--r); padding:30px 24px; text-align:center; transition:all .3s;
+    }
+    .pillar:hover { background:rgba(255,255,255,.09); transform:translateY(-5px); }
+    .pillar-icon { font-size:40px; margin-bottom:14px; }
+    .pillar-title { font-family:'Poppins',sans-serif; font-size:18px; font-weight:700; color:white; margin-bottom:8px; }
+    .pillar-text { color:#94A3B8; font-size:14px; line-height:1.7; }
+
+    /* ==================== CURRICULUM ==================== */
+    .curriculum-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:18px; margin-top:48px; }
+    .disc-card {
+      background:white; border:1px solid var(--border); border-radius:var(--r);
+      overflow:hidden; box-shadow:var(--shadow-sm); transition:all .3s;
+    }
+    .disc-card:hover { box-shadow:var(--shadow-md); transform:translateY(-2px); }
+    .disc-header {
+      padding:18px 22px; display:flex; align-items:center; gap:12px;
+      cursor:pointer; user-select:none;
+    }
+    .disc-icon {
+      width:44px; height:44px; border-radius:var(--r-sm);
+      display:flex; align-items:center; justify-content:center; font-size:22px; flex-shrink:0;
+    }
+    .disc-name { flex:1; font-family:'Poppins',sans-serif; font-weight:700; font-size:15px; color:var(--navy); }
+    .disc-meta { font-size:12px; color:var(--muted); margin-top:2px; }
+    .disc-arrow { color:var(--muted); font-size:16px; transition:transform .3s; }
+    .disc-card.open .disc-arrow { transform:rotate(180deg); }
+    .disc-body { display:none; border-top:1px solid var(--border); }
+    .disc-card.open .disc-body { display:block; }
+    .disc-content { padding:20px 22px; }
+    .disc-excerpt {
+      background:#F8FAFC; border-left:3px solid var(--blue);
+      border-radius:0 var(--r-sm) var(--r-sm) 0; padding:12px 16px;
+      font-size:13px; color:var(--muted); line-height:1.7; margin-bottom:16px; font-style:italic;
+    }
+    .disc-topics { list-style:none; }
+    .disc-topics li {
+      display:flex; align-items:flex-start; gap:8px;
+      padding:6px 0; font-size:14px; border-bottom:1px solid #F1F5F9;
+    }
+    .disc-topics li:last-child { border-bottom:none; }
+    .disc-topics li::before { content:'✓'; color:var(--green); font-weight:700; flex-shrink:0; }
+    .sample-q {
+      background:#EFF6FF; border:1px solid #BFDBFE;
+      border-radius:var(--r-sm); padding:16px; margin-top:16px;
+    }
+    .sq-label { font-size:11px; font-weight:700; color:var(--blue); text-transform:uppercase; letter-spacing:1px; margin-bottom:7px; font-family:'Poppins',sans-serif; }
+    .sq-text { font-size:13px; color:var(--navy); line-height:1.6; margin-bottom:10px; }
+    .sq-answer { background:#D1FAE5; border:1px solid #A7F3D0; border-radius:var(--r-sm); padding:8px 12px; font-size:12px; color:#065F46; font-weight:600; }
+
+    /* ==================== DIFFERENTIALS ==================== */
+    .diff-section { background:#F0F9FF; }
+    .diff-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:18px; margin-top:48px; }
+    .diff-card {
+      background:white; border-radius:var(--r); padding:26px 22px;
+      box-shadow:var(--shadow-sm); border:1px solid #BFDBFE; text-align:center; transition:all .3s;
+    }
+    .diff-card:hover { box-shadow:var(--shadow-md); border-color:var(--blue); transform:translateY(-3px); }
+    .diff-icon { font-size:36px; margin-bottom:12px; }
+    .diff-title { font-family:'Poppins',sans-serif; font-weight:700; font-size:16px; color:var(--navy); margin-bottom:7px; }
+    .diff-text { font-size:14px; color:var(--muted); line-height:1.6; }
+
+    /* ==================== TESTIMONIALS ==================== */
+    .testi-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:22px; margin-top:48px; }
+    .testi-card {
+      background:white; border-radius:var(--r); padding:26px;
+      box-shadow:var(--shadow-md); border:1px solid var(--border); position:relative; overflow:hidden;
+    }
+    .testi-card::before {
+      content:'"'; font-size:90px; color:#DBEAFE; font-family:Georgia,serif;
+      position:absolute; top:-15px; left:14px; line-height:1; pointer-events:none;
+    }
+    .testi-stars { color:var(--gold); font-size:16px; margin-bottom:10px; }
+    .testi-text { font-size:15px; color:var(--text); line-height:1.7; margin-bottom:18px; font-style:italic; }
+    .testi-author { display:flex; align-items:center; gap:12px; }
+    .testi-avatar {
+      width:48px; height:48px; border-radius:50%;
+      background:linear-gradient(135deg,var(--blue),var(--navy));
+      display:flex; align-items:center; justify-content:center; font-size:20px; flex-shrink:0;
+    }
+    .testi-name { font-family:'Poppins',sans-serif; font-weight:700; font-size:15px; color:var(--navy); }
+    .testi-role { font-size:12px; color:var(--muted); }
+    .testi-badge { margin-left:auto; }
+
+    /* ==================== OFFER SECTION ==================== */
+    .offer-section { background:linear-gradient(140deg,#060D1F 0%,#0F2040 60%,#07305A 100%); }
+    .offer-section .section-label { color:var(--gold); }
+    .offer-section .section-title { color:white; }
+    .offer-grid { display:grid; grid-template-columns:1fr 400px; gap:56px; align-items:start; }
+    .offer-intro { color:#94A3B8; font-size:16px; margin:12px 0 28px; }
+    .bonus-list { margin-bottom:28px; }
+    .bonus-item { display:flex; align-items:flex-start; gap:14px; padding:13px 0; border-bottom:1px solid rgba(255,255,255,.08); }
+    .bonus-item:last-child { border-bottom:none; }
+    .bonus-ico { font-size:22px; flex-shrink:0; }
+    .bonus-name { font-family:'Poppins',sans-serif; font-weight:600; font-size:15px; color:white; }
+    .bonus-desc { font-size:13px; color:#94A3B8; margin-top:3px; }
+    .bonus-val { font-family:'Poppins',sans-serif; font-weight:700; color:var(--gold); font-size:13px; flex-shrink:0; margin-left:auto; padding-left:10px; }
+
+    /* PRICE CARD */
+    .price-card {
+      background:white; border-radius:var(--r-lg);
+      padding:36px 32px; text-align:center;
+      position:sticky; top:80px;
+      box-shadow: 0 20px 60px rgba(0,0,0,.4);
+    }
+    .price-urgency {
+      background:#FEF3C7; border:1px solid #FDE68A; border-radius:var(--r-sm);
+      padding:10px 14px; font-size:13px; font-weight:600; color:#92400E; margin-bottom:22px;
+    }
+    .price-from { font-size:15px; color:var(--muted); text-decoration:line-through; margin-bottom:4px; }
+    .price-main { font-family:'Poppins',sans-serif; font-weight:900; font-size:56px; color:var(--navy); line-height:1; }
+    .price-main .sup { font-size:24px; vertical-align:super; }
+    .price-inst { font-size:14px; color:var(--muted); margin:6px 0 24px; }
+    .price-cta { margin-bottom:14px; }
+    .price-guar { display:flex; align-items:center; justify-content:center; gap:6px; font-size:13px; color:var(--green); font-weight:600; }
+    .included { margin-top:22px; text-align:left; }
+    .included-title { font-size:11px; text-transform:uppercase; letter-spacing:1px; color:var(--muted); font-weight:700; margin-bottom:10px; font-family:'Poppins',sans-serif; }
+    .inc-item { display:flex; align-items:center; gap:8px; font-size:13px; color:var(--text); padding:4px 0; }
+    .inc-item::before { content:'✓'; color:var(--green); font-weight:700; }
+
+    /* ==================== GUARANTEE ==================== */
+    .guarantee-section { background:white; }
+    .guar-inner {
+      display:flex; gap:48px; align-items:center;
+      background:#F0FDF4; border:2px solid #A7F3D0; border-radius:var(--r-lg); padding:48px;
+    }
+    .guar-badge {
+      width:140px; height:140px; border-radius:50%;
+      background:linear-gradient(135deg,var(--green),#34D399);
+      display:flex; flex-direction:column; align-items:center; justify-content:center;
+      flex-shrink:0; box-shadow:0 8px 30px rgba(5,150,105,.3); color:white; text-align:center; padding:16px;
+    }
+    .guar-days { font-family:'Poppins',sans-serif; font-size:46px; font-weight:900; line-height:1; }
+    .guar-txt { font-size:12px; font-weight:600; }
+    .guar-content h2 { font-size:28px; color:var(--navy); margin-bottom:12px; }
+    .guar-content p { color:var(--muted); line-height:1.7; }
+
+    /* ==================== FAQ ==================== */
+    .faq-bg { background:#F8FAFC; }
+    .faq-list { max-width:720px; margin:48px auto 0; }
+    .faq-item {
+      background:white; border:1px solid var(--border); border-radius:var(--r);
+      margin-bottom:10px; overflow:hidden; transition:box-shadow .2s;
+    }
+    .faq-item:hover { box-shadow:var(--shadow-sm); }
+    .faq-q {
+      padding:20px 22px; display:flex; align-items:center; justify-content:space-between;
+      cursor:pointer; font-family:'Poppins',sans-serif; font-weight:600; font-size:15px; color:var(--navy); gap:14px;
+    }
+    .faq-toggle { font-size:22px; flex-shrink:0; transition:transform .3s; color:var(--blue); }
+    .faq-item.open .faq-toggle { transform:rotate(45deg); }
+    .faq-a { display:none; padding:0 22px 20px; color:var(--muted); font-size:14px; line-height:1.7; }
+    .faq-item.open .faq-a { display:block; }
+
+    /* ==================== FINAL CTA ==================== */
+    .final-cta {
+      background:linear-gradient(140deg,#060D1F,#0369A1);
+      color:white; text-align:center; padding:100px 0;
+    }
+    .final-cta h2 { font-size:clamp(26px,4vw,46px); color:white; margin-bottom:16px; }
+    .final-cta h2 .gold { color:var(--gold); }
+    .final-cta p { font-size:18px; color:#94A3B8; margin-bottom:40px; max-width:520px; margin-left:auto; margin-right:auto; }
+    .final-trust { display:flex; gap:20px; justify-content:center; flex-wrap:wrap; margin-top:24px; }
+    .final-trust span { color:#94A3B8; font-size:13px; }
+
+    /* ==================== FOOTER ==================== */
+    footer { background:#020617; color:#64748B; padding:44px 0; text-align:center; }
+    .footer-brand { font-family:'Poppins',sans-serif; font-weight:800; font-size:20px; color:white; margin-bottom:10px; }
+    .footer-brand span { color:var(--gold); }
+    footer p { font-size:13px; margin-bottom:5px; }
+    .footer-links { display:flex; gap:22px; justify-content:center; margin:14px 0; flex-wrap:wrap; }
+    .footer-links a { color:#64748B; font-size:13px; transition:color .2s; }
+    .footer-links a:hover { color:white; }
+
+    /* ==================== WHATSAPP FLOAT ==================== */
+    .wa-float {
+      position:fixed; bottom:24px; right:24px; z-index:999;
+      background:#25D366; color:white; width:58px; height:58px;
+      border-radius:50%; display:flex; align-items:center; justify-content:center;
+      font-size:28px; box-shadow:0 4px 18px rgba(37,211,102,.45);
+      cursor:pointer; transition:all .2s; text-decoration:none;
+    }
+    .wa-float:hover { transform:scale(1.12); box-shadow:0 6px 26px rgba(37,211,102,.6); }
+
+    /* ==================== SCROLL ANIMATION ==================== */
+    .fade-in { opacity:0; transform:translateY(22px); transition:opacity .6s, transform .6s; }
+    .fade-in.visible { opacity:1; transform:none; }
+
+    /* ==================== RESPONSIVE ==================== */
+    @media(max-width:960px){
+      .hero .container { grid-template-columns:1fr; }
+      .course-mockup { display:none; }
+      .pillars { grid-template-columns:1fr 1fr; }
+      .offer-grid { grid-template-columns:1fr; }
+      .price-card { position:static; }
+      .guar-inner { flex-direction:column; text-align:center; }
+    }
+    @media(max-width:640px){
+      .section { padding:60px 0; }
+      .pillars { grid-template-columns:1fr; }
+      .navbar-tag,.navbar-cta { display:none; }
+      .hero-ctas { flex-direction:column; }
+      .btn { width:100%; }
+      .mk-body { grid-template-columns:1fr; }
+      .mk-sidebar { display:none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- URGENCY BAR -->
+<div class="urgency-bar">
+  <p>
+    🔥 <strong>OFERTA ESPECIAL ENCERRA EM:</strong>
+    <span class="countdown">
+      <span class="cd-unit" id="cd-h">11</span>:
+      <span class="cd-unit" id="cd-m">47</span>:
+      <span class="cd-unit" id="cd-s">33</span>
+    </span>
+    &nbsp;— Apenas <strong>47 vagas restantes</strong>
+  </p>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="container">
+    <div class="navbar-brand">ELITE<span>CONCURSOS</span></div>
+    <div class="navbar-right">
+      <span class="navbar-tag">🏆 +2.800 aprovados</span>
+      <a href="#oferta" class="navbar-cta">Garantir Minha Vaga →</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-left">
+      <div class="hero-eyebrow">
+        <span class="badge badge-gold">🏆 +2.800 aprovados em 2024 — Câmara Municipal, Tribunais, PRF e mais</span>
+      </div>
+      <h1 class="hero-title">
+        Seja Aprovado no<br>
+        Próximo Concurso<br>
+        <span class="gold">ou Seu Dinheiro de Volta</span>
+      </h1>
+      <p class="hero-sub">
+        O método com base em provas reais das bancas IBDO, CESPE e FGV que já aprovou servidores, policiais e juristas — 9 disciplinas completas, 1.200+ questões comentadas, acesso vitalício.
+      </p>
+      <div class="hero-ctas">
+        <a href="#oferta" class="btn btn-primary btn-lg">
+          🚀 Quero Ser Aprovado Agora
+        </a>
+        <a href="#conteudo" class="btn btn-outline">
+          Ver o Conteúdo
+        </a>
+      </div>
+      <div class="hero-trust">
+        <div class="trust-item"><span class="ck">✅</span> 9 Disciplinas Completas</div>
+        <div class="trust-item"><span class="ck">✅</span> 1.200+ Questões Comentadas</div>
+        <div class="trust-item"><span class="ck">✅</span> Acesso Vitalício</div>
+        <div class="trust-item"><span class="ck">✅</span> Garantia de 7 Dias</div>
+      </div>
+    </div>
+
+    <!-- PLATFORM MOCKUP -->
+    <div class="course-mockup">
+      <div class="mk-header">
+        <span class="mk-dot"></span><span class="mk-dot"></span><span class="mk-dot"></span>
+        <span class="mk-caption">Elite Concursos — Área do Aluno</span>
+      </div>
+      <div class="mk-body">
+        <div class="mk-sidebar">
+          <div class="mk-sidebar-title">📚 Módulos</div>
+          <div class="mk-item"><span class="ck">✓</span> Dir. Constitucional</div>
+          <div class="mk-item active"><span>▶</span> Dir. Administrativo</div>
+          <div class="mk-item"><span class="lk">🔓</span> Português</div>
+          <div class="mk-item"><span class="lk">🔓</span> Raciocínio Lógico</div>
+          <div class="mk-item"><span class="lk">🔓</span> Direito Penal</div>
+          <div class="mk-item"><span class="lk">🔓</span> Direito Civil</div>
+          <div class="mk-item"><span class="lk">🔓</span> Processo Civil</div>
+          <div class="mk-item"><span class="lk">🔓</span> Informática</div>
+          <div class="mk-item"><span class="lk">🔓</span> Banco de Questões</div>
+        </div>
+        <div class="mk-content">
+          <div class="mk-video"><div class="mk-play">▶</div></div>
+          <div class="mk-lesson">Extinção dos Atos Administrativos</div>
+          <div class="mk-prog-lbl">Progresso: 35%</div>
+          <div class="mk-prog-bar"><div class="mk-prog-fill"></div></div>
+          <div class="mk-btns">
+            <div class="mk-btn mk-btn-blue">📄 PDF</div>
+            <div class="mk-btn mk-btn-gray">📝 Questões</div>
+            <div class="mk-btn mk-btn-gray">📊 Simulado</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROOF STRIP -->
+<div class="proof-strip">
+  <div class="container">
+    <div class="proof-item">
+      <div class="proof-number" data-target="2847">0</div>
+      <div class="proof-label">Alunos Aprovados</div>
+    </div>
+    <div class="proof-item">
+      <div class="proof-number">9</div>
+      <div class="proof-label">Disciplinas</div>
+    </div>
+    <div class="proof-item">
+      <div class="proof-number" data-target="1200">0</div>
+      <div class="proof-label">Questões Comentadas</div>
+    </div>
+    <div class="proof-item">
+      <div class="proof-number">98%</div>
+      <div class="proof-label">Satisfação</div>
+    </div>
+    <div class="proof-item">
+      <div class="proof-number">7</div>
+      <div class="proof-label">Dias de Garantia</div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== DOR ===== -->
+<section class="section">
+  <div class="container">
+    <div class="section-label">Identificação</div>
+    <h2 class="section-title">A dor de quem estuda<br>sem método e não aprova</h2>
+    <p class="section-sub">Se você se identifica com algum item abaixo, o Método Elite foi criado exatamente para você.</p>
+
+    <div class="pain-grid">
+      <div class="pain-card fade-in">
+        <div class="pain-icon">😩</div>
+        <div>
+          <div class="pain-title">Excesso de conteúdo sem direção</div>
+          <div class="pain-text">Centenas de PDFs, apostilas e canais do YouTube — e no fim você não sabe por onde começar. O edital parece impossível.</div>
+        </div>
+      </div>
+      <div class="pain-card fade-in">
+        <div class="pain-icon">⏳</div>
+        <div>
+          <div class="pain-title">Falta de tempo para estudar</div>
+          <div class="pain-text">Trabalha, tem família e obrigações. Quando sobra tempo você está cansado demais para absorver conteúdo.</div>
+        </div>
+      </div>
+      <div class="pain-card fade-in">
+        <div class="pain-icon">📉</div>
+        <div>
+          <div class="pain-title">Reprovações que destroem a motivação</div>
+          <div class="pain-text">Estudou meses, esperou o resultado e não passou. A sensação de fracasso é paralisante. Recomeçar parece impossível.</div>
+        </div>
+      </div>
+      <div class="pain-card fade-in">
+        <div class="pain-icon">🤯</div>
+        <div>
+          <div class="pain-title">Desorganização nos estudos</div>
+          <div class="pain-text">Sem cronograma, sem prioridade. Estuda o que gosta, ignora o que mais cai e chega despreparado nas matérias decisivas.</div>
+        </div>
+      </div>
+      <div class="pain-card fade-in">
+        <div class="pain-icon">💸</div>
+        <div>
+          <div class="pain-title">Gastou com cursos que não entregam</div>
+          <div class="pain-text">Investiu em cursinhos caros com videoaulas longas. Passou um ano estudando e o resultado foi decepcionante.</div>
+        </div>
+      </div>
+      <div class="pain-card fade-in">
+        <div class="pain-icon">😰</div>
+        <div>
+          <div class="pain-title">Trava na hora de resolver questões</div>
+          <div class="pain-text">Na teoria entende, mas quando vê a questão congela. Não consegue aplicar o conteúdo do jeito que a banca cobra.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SOLUÇÃO ===== -->
+<section class="section solution-section">
+  <div class="container">
+    <div class="section-label">A Solução</div>
+    <h2 class="section-title">Conheça o Método Elite:<br>direto ao ponto, sem enrolação</h2>
+    <p class="section-sub">Um sistema completo de aprovação, construído em cima das provas reais das principais bancas do Brasil.</p>
+
+    <div class="pillars">
+      <div class="pillar fade-in">
+        <div class="pillar-icon">🎯</div>
+        <div class="pillar-title">Conteúdo Focado</div>
+        <div class="pillar-text">Cada aula é construída com base no que as bancas realmente cobram. Zero teoria desnecessária. Você aprende o que cai.</div>
+      </div>
+      <div class="pillar fade-in">
+        <div class="pillar-icon">📊</div>
+        <div class="pillar-title">Questões Comentadas</div>
+        <div class="pillar-text">Mais de 1.200 questões de provas reais, comentadas letra por letra. Você aprende o raciocínio da banca, não só o gabarito.</div>
+      </div>
+      <div class="pillar fade-in">
+        <div class="pillar-icon">🗺️</div>
+        <div class="pillar-title">Estratégia de Aprovação</div>
+        <div class="pillar-text">Cronograma personalizado por edital, mapas mentais e técnicas para maximizar seu desempenho no dia da prova.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTEÚDO ===== -->
+<section class="section" id="conteudo">
+  <div class="container">
+    <div class="section-label">Currículo Completo</div>
+    <h2 class="section-title">9 Disciplinas — Cobertura Total<br>para o seu concurso</h2>
+    <p class="section-sub">Cada módulo foi desenvolvido com base nas bancas mais exigidas: IBDO, CESPE, FGV, VUNESP e FCC. Com exemplos reais de provas.</p>
+
+    <div class="curriculum-grid">
+
+      <!-- DIREITO CONSTITUCIONAL -->
+      <div class="disc-card" onclick="toggleDisc(this)">
+        <div class="disc-header">
+          <div class="disc-icon" style="background:#DBEAFE">⚖️</div>
+          <div>
+            <div class="disc-name">Direito Constitucional</div>
+            <div class="disc-meta">28 aulas · 180+ questões · PDF incluso</div>
+          </div>
+          <div class="disc-arrow">▼</div>
+        </div>
+        <div class="disc-body">
+          <div class="disc-content">
+            <div class="disc-excerpt">
+              "As Mesas Diretoras de cada Casa exercem funções administrativas, devendo sua constituição observar, tanto quanto possível, a representação proporcional dos partidos ou blocos parlamentares — art. 58, § 1º, CF."
+            </div>
+            <ul class="disc-topics">
+              <li>Princípios, Direitos e Garantias Fundamentais</li>
+              <li>Organização do Estado e dos Poderes</li>
+              <li>Mesas Diretoras: Câmara, Senado e Congresso Nacional</li>
+              <li>CPI — poderes, limitações e reserva de jurisdição</li>
+              <li>Processo Legislativo e Veto Presidencial (art. 66)</li>
+              <li>Controle Externo e Tribunal de Contas da União</li>
+              <li>Proposta de Emenda Constitucional (PEC)</li>
+              <li>Poder Executivo, Judiciário e Ministério Público</li>
+            </ul>
+            <div class="sample-q">
+              <div class="sq-label">📝 Questão Real — Banca IBDO</div>
+              <div class="sq-text">A CPI pode decretar a interceptação telefônica de investigados, pois possui os mesmos poderes de investigação das autoridades judiciais. (V/F)</div>
+              <div class="sq-answer">✗ ERRADA — O STF pacificou: CPIs NÃO podem decretar interceptações telefônicas. Trata-se de cláusula de reserva de jurisdição exclusiva do Judiciário.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DIREITO ADMINISTRATIVO -->
+      <div class="disc-card" onclick="toggleDisc(this)">
+        <div class="disc-header">
+          <div class="disc-icon" style="background:#D1FAE5">🏛️</div>
+          <div>
+            <div class="disc-name">Direito Administrativo</div>
+            <div class="disc-meta">32 aulas · 210+ questões · PDF incluso</div>
+          </div>
+          <div class="disc-arrow">▼</div>
+        </div>
+        <div class="disc-body">
+          <div class="disc-content">
+            <div class="disc-excerpt">
+              "ANULAÇÃO → Motivo: ilegalidade · Efeitos: Ex Tunc (retroage) · Prazo: 5 anos · Competência: Administração e Judiciário. REVOGAÇÃO → Mérito (conveniência/oportunidade) · Efeitos: Ex Nunc · Apenas a Administração. Judiciário SÓ ANULA, nunca revoga!"
+            </div>
+            <ul class="disc-topics">
+              <li>Atos Administrativos: extinção e classificação</li>
+              <li>Anulação (Ex Tunc) vs. Revogação (Ex Nunc) — STF Súmula 473</li>
+              <li>Cassação, Caducidade, Contraposição e Extinction Natural</li>
+              <li>Controle Judicial — apenas legalidade, nunca o mérito</li>
+              <li>Bens Públicos: afetação e desafetação</li>
+              <li>Serviços Públicos: Encapação, Caducidade e Rescisão</li>
+              <li>Licitações — Lei 14.133/2021 (nova LLCA)</li>
+              <li>Autorização, Concessão e Permissão de Serviços Públicos</li>
+            </ul>
+            <div class="sample-q">
+              <div class="sq-label">📝 Questão Comentada</div>
+              <div class="sq-text">O Poder Judiciário pode revogar ato administrativo do Poder Executivo quando este deixar de ser conveniente e oportuno. (V/F)</div>
+              <div class="sq-answer">✗ ERRADA — O Judiciário NUNCA revoga atos de outros Poderes. Apenas ANULA por ilegalidade. Revogação é mérito — exclusivo da Administração.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PORTUGUÊS -->
+      <div class="disc-card" onclick="toggleDisc(this)">
+        <div class="disc-header">
+          <div class="disc-icon" style="background:#FEF3C7">📖</div>
+          <div>
+            <div class="disc-name">Português para Concursos</div>
+            <div class="disc-meta">24 aulas · 160+ questões · PDF incluso</div>
+          </div>
+          <div class="disc-arrow">▼</div>
+        </div>
+        <div class="disc-body">
+          <div class="disc-content">
+            <div class="disc-excerpt">
+              "As 10 classes de palavras — com foco no que as bancas mais cobram: pronomes (7 tipos), verbos regulares/irregulares/defectivos e as locuções que pegam todo mundo na prova."
+            </div>
+            <ul class="disc-topics">
+              <li>10 Classes de Palavras — morfologia completa</li>
+              <li>Pronomes: 7 tipos (pessoal, possessivo, relativo, demonstrativo...)</li>
+              <li>Verbos: regular, irregular, defectivo, locuções</li>
+              <li>Acentuação Gráfica e uso da Crase</li>
+              <li>Dítonos, Hiatos e Divisão Silábica</li>
+              <li>Formação e Estrutura das Palavras</li>
+              <li>Parônimos e Homônimos — pegadinhas de banca</li>
+              <li>Predicado Verbal, Nominal e Verbo-Nominal</li>
+            </ul>
+            <div class="sample-q">
+              <div class="sq-label">📝 Questão Comentada</div>
+              <div class="sq-text">Qual a classe gramatical da palavra "meu" em "Perdi meu documento no cartório"?</div>
+              <div class="sq-answer">✓ Pronome Possessivo — acompanha o substantivo "documento" indicando posse. Não confundir com pronome pessoal (eu, tu, ele, nós...).</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RACIOCÍNIO LÓGICO -->
+      <div class="disc-card" onclick="toggleDisc(this)">
+        <div class="disc-header">
+          <div class="disc-icon" style="background:#EDE9FE">🧠</div>
+          <div>
+            <div class="disc-name">Raciocínio Lógico</div>
+            <div class="disc-meta">22 aulas · 200+ questões · PDF incluso</div>
+          </div>
+          <div class="disc-arrow">▼</div>
+        </div>
+        <div class="disc-body">
+          <div class="disc-content">
+            <div class="disc-excerpt">
+              "Os 3 Princípios da Lógica: Identidade (verdadeiro é verdadeiro), Não Contradição (nunca V e F ao mesmo tempo), Terceiro Excluído (ou V ou F — sem meio-termo). Base de toda questão de lógica proposicional."
+            </div>
+            <ul class="disc-topics">
+              <li>Proposições — sentenças declarativas V ou F</li>
+              <li>Os 3 Princípios: Identidade, Não Contradição, Terceiro Excluído</li>
+              <li>Proposição Simples vs. Composta</li>
+              <li>Conectivos Lógicos e Tabela Verdade (2ⁿ linhas)</li>
+              <li>Equivalência e Negação de proposições</li>
+              <li>Tautologia e Contradição</li>
+              <li>Operações com Conjuntos — Diagrama de Venn</li>
+              <li>Lógica Proposicional com mnemônicos eficazes</li>
+            </ul>
+            <div class="sample-q">
+              <div class="sq-label">📝 Questão Real de Concurso</div>
+              <div class="sq-text">"Cada coisa é aquilo que é" (Leibniz). Esse enunciado corresponde a qual princípio lógico?<br>a) Não Contradição &nbsp; b) Identidade &nbsp; c) Terceiro Excluído</div>
+              <div class="sq-answer">✓ b) Princípio da Identidade — proposição verdadeira sempre verdadeira, falsa sempre falsa. Gabarito B.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DIREITO PENAL -->
+      <div class="disc-card" onclick="toggleDisc(this)">
+        <div class="disc-header">
+          <div class="disc-icon" style="background:#FEE2E2">🔒</div>
+          <div>
+            <div class="disc-name">Direito Penal</div>
+            <div class="disc-meta">20 aulas · 140+ questões · PDF incluso</div>
+          </div>
+          <div class="disc-arrow">▼</div>
+        </div>
+        <div class="disc-body">
+          <div class="disc-content">
+            <div class="disc-excerpt">
+              "Teoria Geral do Crime, elementos do crime doloso e culposo, causas de exclusão de ilicitude e culpabilidade — matéria essencial para carreiras policiais e jurídicas."
+            </div>
+            <ul class="disc-topics">
+              <li>Princípios do Direito Penal</li>
+              <li>Teoria Geral do Crime e seus elementos</li>
+              <li>Crime Doloso, Culposo e Preterdoloso</li>
+              <li>Causas de Exclusão de Ilicitude</li>
+              <li>Responsabilidade Penal e Culpabilidade</li>
+              <li>Crimes contra a Pessoa e o Patrimônio</li>
+              <li>Legislação Especial: Lei Maria da Penha, ECA, etc.</li>
+              <li>Estudo de caso: aplicações em situações reais</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- DIREITO CIVIL -->
+      <div class="disc-card" onclick="toggleDisc(this)">
+        <div class="disc-header">
+          <div class="disc-icon" style="background:#F0FDF4">📜</div>
+          <div>
+            <div class="disc-name">Direito Civil</div>
+            <div class="disc-meta">18 aulas · 120+ questões · PDF incluso</div>
+          </div>
+          <div class="disc-arrow">▼</div>
+        </div>
+        <div class="disc-body">
+          <div class="disc-content">
+            <div class="disc-excerpt">
+              "Teoria Geral dos Contratos: formação, requisitos de validade, extinção. Responsabilidade Civil: conduta, culpa, nexo causal e dano — pilares exigidos em cargos jurídicos e cartorários."
+            </div>
+            <ul class="disc-topics">
+              <li>Teoria Geral dos Contratos</li>
+              <li>Requisitos de Validade dos Atos Jurídicos</li>
+              <li>Responsabilidade Civil: conduta, culpa, nexo e dano</li>
+              <li>Pessoas Naturais e Jurídicas</li>
+              <li>Bens, Fatos e Atos Jurídicos</li>
+              <li>Prescrição e Decadência</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROCESSO CIVIL -->
+      <div class="disc-card" onclick="toggleDisc(this)">
+        <div class="disc-header">
+          <div class="disc-icon" style="background:#E0F2FE">⚡</div>
+          <div>
+            <div class="disc-name">Processo Civil</div>
+            <div class="disc-meta">16 aulas · 100+ questões · PDF incluso</div>
+          </div>
+          <div class="disc-arrow">▼</div>
+        </div>
+        <div class="disc-body">
+          <div class="disc-content">
+            <div class="disc-excerpt">
+              "Litisconsórcio, gratuidade de justiça, competência e recursos — pilares do Processo Civil cobrados para escreventes, analistas judiciários e cargos de assessoria jurídica."
+            </div>
+            <ul class="disc-topics">
+              <li>Princípios do Processo Civil (CPC/2015)</li>
+              <li>Litisconsórcio e Intervenção de Terceiros</li>
+              <li>Gratuidade de Justiça — requisitos e efeitos</li>
+              <li>Competência: absoluta e relativa</li>
+              <li>Tutela Provisória de Urgência e Evidência</li>
+              <li>Execução e Cumprimento de Sentença</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- INFORMÁTICA -->
+      <div class="disc-card" onclick="toggleDisc(this)">
+        <div class="disc-header">
+          <div class="disc-icon" style="background:#F3E8FF">💻</div>
+          <div>
+            <div class="disc-name">Noções de Informática</div>
+            <div class="disc-meta">14 aulas · 90+ questões · PDF incluso</div>
+          </div>
+          <div class="disc-arrow">▼</div>
+        </div>
+        <div class="disc-body">
+          <div class="disc-content">
+            <div class="disc-excerpt">
+              "Phishing, Ransomware, Spoofing e Pharming — os 4 ataques cibernéticos mais cobrados em todo concurso. Aprenda a diferença de Hardware x Software, Windows e Excel com questões reais da Banca IBDO."
+            </div>
+            <ul class="disc-topics">
+              <li>Segurança Digital: Phishing, SPAM, Ransomware, Spoofing, Pharming</li>
+              <li>Hardware vs. Software — diferença fundamental de banca</li>
+              <li>Memória: RAM, ROM, Cache e Registradores</li>
+              <li>Windows: atalhos e configurações mais cobrados</li>
+              <li>Excel: fórmulas, barras e funções básicas</li>
+              <li>Navegadores, redes, internet e segurança</li>
+            </ul>
+            <div class="sample-q">
+              <div class="sq-label">📝 Questão Real — Banca IBDO</div>
+              <div class="sq-text">O Ransomware é um tipo de ataque que redireciona o usuário para sites falsos mesmo quando ele digita o endereço correto no navegador. (V/F)</div>
+              <div class="sq-answer">✗ ERRADA — Isso é PHARMING! Ransomware SEQUESTRA os dados por criptografia. Bizu: Phar = Página Hacker Altera Redirecionando. Pegadinha clássica de banca.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BANCO DE QUESTÕES -->
+      <div class="disc-card" onclick="toggleDisc(this)">
+        <div class="disc-header">
+          <div class="disc-icon" style="background:#FFF7ED">🏆</div>
+          <div>
+            <div class="disc-name">Banco de Questões + Simulados</div>
+            <div class="disc-meta">1.200+ questões · Simulados cronometrados</div>
+          </div>
+          <div class="disc-arrow">▼</div>
+        </div>
+        <div class="disc-body">
+          <div class="disc-content">
+            <div class="disc-excerpt">
+              "Questões filtradas por disciplina, banca, nível e assunto. Simulados cronometrados no formato das provas reais. Veja onde errou, aprenda o porquê e evolua sua performance."
+            </div>
+            <ul class="disc-topics">
+              <li>1.200+ questões de provas anteriores comentadas letra por letra</li>
+              <li>Filtro por banca: IBDO, CESPE, FGV, VUNESP e FCC</li>
+              <li>Simulados completos cronometrados por cargo</li>
+              <li>Análise de desempenho por disciplina e assunto</li>
+              <li>Revisão inteligente com repetição espaçada</li>
+              <li>Questões inéditas no padrão Câmara Municipal</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== DIFERENCIAIS ===== -->
+<section class="section diff-section">
+  <div class="container">
+    <div class="section-label">Por que o Método Elite?</div>
+    <h2 class="section-title">Diferenciais que entregam aprovação,<br>não apenas conteúdo</h2>
+    <p class="section-sub">Cada detalhe foi pensado para que você aproveite ao máximo o tempo que tem disponível.</p>
+
+    <div class="diff-grid">
+      <div class="diff-card fade-in">
+        <div class="diff-icon">⚡</div>
+        <div class="diff-title">Método Acelerado</div>
+        <div class="diff-text">Conteúdo comprimido e estratégico. Você aprende mais em 2h do que em 8h estudando do jeito errado.</div>
+      </div>
+      <div class="diff-card fade-in">
+        <div class="diff-icon">🔄</div>
+        <div class="diff-title">Atualizado em 2025</div>
+        <div class="diff-text">Novas súmulas do STF, alterações legislativas e mudanças de entendimento das bancas — adicionados sem custo extra.</div>
+      </div>
+      <div class="diff-card fade-in">
+        <div class="diff-icon">🎯</div>
+        <div class="diff-title">Foco em Provas Reais</div>
+        <div class="diff-text">Cada aula é construída em cima do histórico de questões das bancas. Você estuda o que cai, não o que parece importante.</div>
+      </div>
+      <div class="diff-card fade-in">
+        <div class="diff-icon">📱</div>
+        <div class="diff-title">Acesso em Qualquer Dispositivo</div>
+        <div class="diff-text">Celular, tablet ou PC — acesso 24h, offline e online. Estude no ônibus, no almoço ou antes de dormir.</div>
+      </div>
+      <div class="diff-card fade-in">
+        <div class="diff-icon">♾️</div>
+        <div class="diff-title">Acesso Vitalício</div>
+        <div class="diff-text">Pagou uma vez, acessa para sempre. Revise o conteúdo em quantos concursos precisar, sem custo adicional.</div>
+      </div>
+      <div class="diff-card fade-in">
+        <div class="diff-icon">🗺️</div>
+        <div class="diff-title">Cronograma Personalizado</div>
+        <div class="diff-text">Receba um cronograma baseado no seu edital e no tempo disponível. Chega de não saber por onde começar.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DEPOIMENTOS ===== -->
+<section class="section">
+  <div class="container">
+    <div class="section-label">Prova Social</div>
+    <h2 class="section-title">Eles estudaram. Eles passaram.<br>Agora é a sua vez.</h2>
+    <p class="section-sub">Depoimentos reais de alunos que usaram o Método Elite e transformaram suas vidas.</p>
+
+    <div class="testi-grid">
+      <div class="testi-card fade-in">
+        <div class="testi-stars">★★★★★</div>
+        <div class="testi-text">
+          "Fiz 4 concursos antes sem passar. Com o Método Elite, em 6 meses fui aprovado na Câmara Municipal. A parte de Direito Administrativo — anulação vs. revogação — caiu certinho na minha prova e eu acertei por causa das questões comentadas."
+        </div>
+        <div class="testi-author">
+          <div class="testi-avatar">👨‍💼</div>
+          <div>
+            <div class="testi-name">Rafael Mendonça</div>
+            <div class="testi-role">Aprovado — Câmara Municipal · Analista Administrativo</div>
+          </div>
+          <div class="testi-badge"><span class="badge badge-green">✓ Aprovado</span></div>
+        </div>
+      </div>
+
+      <div class="testi-card fade-in">
+        <div class="testi-stars">★★★★★</div>
+        <div class="testi-text">
+          "O módulo de Raciocínio Lógico mudou tudo pra mim. Sempre travei nessa matéria. Os mnemônicos e as questões sobre os 3 princípios da lógica fizeram eu dominar o conteúdo em 3 semanas. Inacreditável."
+        </div>
+        <div class="testi-author">
+          <div class="testi-avatar">👩‍🎓</div>
+          <div>
+            <div class="testi-name">Camila Ferreira</div>
+            <div class="testi-role">Aprovada — Concurso Estadual · Escrevente Judiciário</div>
+          </div>
+          <div class="testi-badge"><span class="badge badge-green">✓ Aprovada</span></div>
+        </div>
+      </div>
+
+      <div class="testi-card fade-in">
+        <div class="testi-stars">★★★★★</div>
+        <div class="testi-text">
+          "Estudei Informática aqui e na prova caiu exatamente o que o material cobria — Phishing vs. Pharming, Ransomware e os atalhos do Windows. Fiz 9 de 10 questões de Informática. Valeu cada centavo."
+        </div>
+        <div class="testi-author">
+          <div class="testi-avatar">👨‍💻</div>
+          <div>
+            <div class="testi-name">Lucas Borges</div>
+            <div class="testi-role">Aprovado — Concurso Federal · Técnico Administrativo</div>
+          </div>
+          <div class="testi-badge"><span class="badge badge-green">✓ Aprovado</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== OFERTA ===== -->
+<section class="section offer-section" id="oferta">
+  <div class="container">
+    <div class="offer-grid">
+      <div class="offer-left">
+        <div class="section-label">Oferta Especial — Tempo Limitado</div>
+        <h2 class="section-title">Tudo que você precisa para ser aprovado, por um preço que não vai durar</h2>
+        <p class="offer-intro">Acesso completo às 9 disciplinas, banco de questões, simulados, PDFs e todos os bônus abaixo:</p>
+
+        <div class="bonus-list">
+          <div class="bonus-item">
+            <div class="bonus-ico">📅</div>
+            <div>
+              <div class="bonus-name">Bônus 1 — Cronograma de Estudos Personalizado</div>
+              <div class="bonus-desc">Baseado no seu edital e tempo disponível. Nunca mais sem saber o que estudar cada dia.</div>
+            </div>
+            <div class="bonus-val">R$ 97</div>
+          </div>
+          <div class="bonus-item">
+            <div class="bonus-ico">🧩</div>
+            <div>
+              <div class="bonus-name">Bônus 2 — Mapas Mentais de Todas as Disciplinas</div>
+              <div class="bonus-desc">Revisão visual e rápida de toda a matéria. Ideal para a véspera da prova.</div>
+            </div>
+            <div class="bonus-val">R$ 67</div>
+          </div>
+          <div class="bonus-item">
+            <div class="bonus-ico">🎯</div>
+            <div>
+              <div class="bonus-name">Bônus 3 — Simulado Inédito no Padrão IBDO</div>
+              <div class="bonus-desc">Prova completa com gabarito comentado. Questões inéditas no estilo Câmara Municipal.</div>
+            </div>
+            <div class="bonus-val">R$ 47</div>
+          </div>
+          <div class="bonus-item">
+            <div class="bonus-ico">📲</div>
+            <div>
+              <div class="bonus-name">Bônus 4 — Grupo VIP de Dúvidas no WhatsApp</div>
+              <div class="bonus-desc">Tire dúvidas com a equipe pedagógica e com outros concurseiros aprovados.</div>
+            </div>
+            <div class="bonus-val">R$ 97</div>
+          </div>
+          <div class="bonus-item">
+            <div class="bonus-ico">🔔</div>
+            <div>
+              <div class="bonus-name">Bônus 5 — Alertas de Novos Concursos</div>
+              <div class="bonus-desc">Receba notificações de novos editais da sua área diretamente pelo WhatsApp.</div>
+            </div>
+            <div class="bonus-val">Grátis</div>
+          </div>
+        </div>
+
+        <p style="color:#94A3B8; font-size:14px;">
+          Valor total dos bônus: <strong style="color:var(--gold)">R$ 308</strong> — incluídos sem custo adicional.
+        </p>
+      </div>
+
+      <!-- PRICE CARD -->
+      <div>
+        <div class="price-card">
+          <div class="price-urgency">⏰ Oferta encerra hoje — preço voltará ao original</div>
+          <div class="price-from">De <s>R$ 497,00</s></div>
+          <div class="price-main"><span class="sup">R$</span>97</div>
+          <div class="price-inst">ou 12x de R$ 9,90 sem juros</div>
+          <div class="price-cta">
+            <a href="#" class="btn btn-primary btn-lg btn-full">🚀 Quero Ser Aprovado Agora</a>
+          </div>
+          <div class="price-guar">🛡️ Garantia de 7 dias — risco zero</div>
+          <div class="included">
+            <div class="included-title">O que está incluído</div>
+            <div class="inc-item">9 Disciplinas Completas</div>
+            <div class="inc-item">1.200+ Questões Comentadas</div>
+            <div class="inc-item">Simulados Cronometrados</div>
+            <div class="inc-item">PDFs de Todas as Matérias</div>
+            <div class="inc-item">Acesso Vitalício</div>
+            <div class="inc-item">Cronograma Personalizado</div>
+            <div class="inc-item">Mapas Mentais Completos</div>
+            <div class="inc-item">Grupo VIP WhatsApp</div>
+            <div class="inc-item">Alertas de Concursos</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GARANTIA ===== -->
+<section class="section guarantee-section">
+  <div class="container">
+    <div class="guar-inner">
+      <div class="guar-badge">
+        <div class="guar-days">7</div>
+        <div class="guar-txt">DIAS DE<br>GARANTIA</div>
+      </div>
+      <div class="guar-content">
+        <h2>Garantia Incondicional de 7 Dias — Risco Zero</h2>
+        <p>
+          Você tem 7 dias completos para acessar todo o conteúdo, assistir às aulas, resolver questões e avaliar o método com calma.
+          Se por qualquer motivo não ficar satisfeito, basta enviar um e-mail e devolvemos <strong>100% do seu dinheiro</strong> —
+          sem perguntas, sem burocracia, sem enrolação. É seu direito garantido pelo Código de Defesa do Consumidor (Art. 49). Você não tem nada a perder.
+        </p>
+        <a href="#oferta" class="btn btn-green" style="margin-top:24px; display:inline-flex;">
+          Garantir Minha Vaga com Segurança →
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="section faq-bg">
+  <div class="container">
+    <div class="text-center" style="margin-bottom:0">
+      <div class="section-label">Dúvidas Frequentes</div>
+      <h2 class="section-title">Ainda tem dúvidas?<br>Aqui estão as respostas.</h2>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">Preciso ter conhecimento prévio para começar?<span class="faq-toggle">+</span></div>
+        <div class="faq-a">Não. O curso começa do zero em cada disciplina. As aulas são organizadas de forma progressiva — do básico ao avançado. Se você nunca estudou Direito Constitucional ou Raciocínio Lógico, vai conseguir acompanhar tranquilamente.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">Para quais concursos o curso serve?<span class="faq-toggle">+</span></div>
+        <div class="faq-a">O conteúdo atende a concursos municipais, estaduais e federais de carreiras policiais (PRF, PC, PM), jurídicas (escrevente, analista judiciário, cartório) e administrativas (câmaras municipais, prefeituras, tribunais, INSS, Receita Federal). As disciplinas são as mais cobradas nessas áreas.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">O acesso é realmente vitalício?<span class="faq-toggle">+</span></div>
+        <div class="faq-a">Sim. Você paga uma única vez e acessa para sempre. Todos os novos conteúdos e atualizações legislativas são incluídos automaticamente, sem custo adicional. Você pode revisar o material em quantos concursos precisar.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">Tenho pouco tempo disponível. O curso funciona para mim?<span class="faq-toggle">+</span></div>
+        <div class="faq-a">Sim. O método foi desenvolvido pensando em quem trabalha e estuda. Com 1 a 2 horas por dia você consegue seguir o cronograma incluído. As aulas são objetivas e os PDFs permitem revisar rápido no celular em qualquer lugar.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">Quando recebo o acesso após o pagamento?<span class="faq-toggle">+</span></div>
+        <div class="faq-a">O acesso é liberado imediatamente após a confirmação do pagamento — inclusive para compras via PIX (instantâneo). Você receberá um e-mail com as instruções de acesso em até 5 minutos.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">E se eu não gostar do curso?<span class="faq-toggle">+</span></div>
+        <div class="faq-a">Você tem 7 dias de garantia incondicional. Se por qualquer motivo não ficar satisfeito, basta enviar um e-mail para nosso suporte e devolvemos 100% do seu dinheiro — sem questionamentos e sem burocracia.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FINAL CTA ===== -->
+<section class="final-cta">
+  <div class="container">
+    <h2>Sua aprovação começa<br><span class="gold">hoje, agora, com o Método Elite</span></h2>
+    <p>Cada dia sem estudar com método é um dia perdido. Garanta sua vaga enquanto o preço especial ainda está disponível.</p>
+    <div>
+      <a href="#oferta" class="btn btn-primary btn-lg">🚀 Quero Ser Aprovado Agora — R$ 97</a>
+    </div>
+    <div class="final-trust">
+      <span>✅ Acesso imediato</span>
+      <span>✅ Garantia de 7 dias</span>
+      <span>✅ Acesso vitalício</span>
+      <span>✅ 1.200+ questões comentadas</span>
+      <span>✅ Sem assinatura recorrente</span>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-brand">ELITE<span>CONCURSOS</span></div>
+    <p>O método de aprovação para carreiras policiais, jurídicas e administrativas.</p>
+    <div class="footer-links">
+      <a href="#">Termos de Uso</a>
+      <a href="#">Política de Privacidade</a>
+      <a href="#">Contato</a>
+      <a href="#">Suporte</a>
+    </div>
+    <p>© 2025 Elite Concursos. Todos os direitos reservados.</p>
+    <p style="margin-top:10px; font-size:11px; color:#374151">Este site não é afiliado ao governo federal. Os resultados podem variar. Garantia de 7 dias conforme Código de Defesa do Consumidor — Art. 49 da Lei 8.078/90.</p>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="#oferta" class="wa-float" title="Garantir Minha Vaga">💬</a>
+
+<script>
+  // ---- Toggle discipline cards ----
+  function toggleDisc(el) { el.classList.toggle('open'); }
+
+  // ---- Toggle FAQ ----
+  function toggleFaq(el) { el.classList.toggle('open'); }
+
+  // ---- Countdown Timer ----
+  (function() {
+    const stored = sessionStorage.getItem('cd_end');
+    let end;
+    if (stored) {
+      end = parseInt(stored);
+    } else {
+      end = Date.now() + (11 * 3600 + 47 * 60 + 33) * 1000;
+      sessionStorage.setItem('cd_end', end);
+    }
+    const cdH = document.getElementById('cd-h');
+    const cdM = document.getElementById('cd-m');
+    const cdS = document.getElementById('cd-s');
+
+    function update() {
+      let diff = Math.max(0, Math.floor((end - Date.now()) / 1000));
+      const h = Math.floor(diff / 3600);
+      diff -= h * 3600;
+      const m = Math.floor(diff / 60);
+      const s = diff - m * 60;
+      cdH.textContent = String(h).padStart(2,'0');
+      cdM.textContent = String(m).padStart(2,'0');
+      cdS.textContent = String(s).padStart(2,'0');
+    }
+    update();
+    setInterval(update, 1000);
+  })();
+
+  // ---- Number counter animation ----
+  (function() {
+    const counters = document.querySelectorAll('[data-target]');
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        const target = parseInt(el.dataset.target);
+        let cur = 0;
+        const step = Math.ceil(target / 55);
+        const t = setInterval(() => {
+          cur = Math.min(cur + step, target);
+          el.textContent = cur.toLocaleString('pt-BR');
+          if (cur >= target) clearInterval(t);
+        }, 28);
+        obs.unobserve(el);
+      });
+    }, { threshold: 0.5 });
+    counters.forEach(c => obs.observe(c));
+  })();
+
+  // ---- Fade-in on scroll ----
+  (function() {
+    const els = document.querySelectorAll('.fade-in');
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    els.forEach(el => obs.observe(el));
+  })();
+</script>
+
+</body>
+</html>
