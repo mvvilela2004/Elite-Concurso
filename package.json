@@ -1,0 +1,24 @@
+{
+  "name": "landing-concursos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mvvilela2004/Elite-Concurso.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/mvvilela2004/Elite-Concurso/issues"
+  },
+  "homepage": "https://github.com/mvvilela2004/Elite-Concurso#readme",
+  "devDependencies": {
+    "puppeteer-core": "^24.42.0"
+  }
+}
